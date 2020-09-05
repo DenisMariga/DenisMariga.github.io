@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body id="home">
+    <header id="home-page " class="home-page">
+        <div id="nav-bar">
+
+            <div class="logo">
+                <h1><span><i class="fas fa-book-open"></i>May</span>Fair</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#cases">Cases</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="home-page-content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+    <section id="blog-content">
+        <div class="blog-flex">
+            <div class="blog-content-left">
+                <img src="./img/blog1.jpg" alt="" srcset="">
+            </div>
+            <div class="blog-content-right bg-#f4f4f4">
+                <h1>Blog Post One</h1>
+                <i class="fas fa-user"> Posted By Andres | August 30 2020</i>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repudiandae ullam voluptatum hic repellendus ipsa dolorum, omnis ea commodi in, ab corporis nihil, aperiam deserunt.</p>
+                <a href="blog.html" class="btn">Read More</a>
+            </div>
+        </div>
+        <div class="blog-flex2">
+            <div class="blog-content-right bg-dark">
+                <h1>Blog Post Two</h1>
+                <i class="fas fa-user"> Posted By Vanessa Madrine | August 30 2020</i>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repudiandae ullam voluptatum hic repellendus ipsa dolorum, omnis ea commodi in, ab corporis nihil, aperiam deserunt.</p>
+                <a href="blog.html" class="btn">Read More</a>
+            </div>
+            <div class="blog-content-left">
+                <img src="./img/blog2.jpg" alt="" srcset="">
+            </div>
+
+        </div>
+        <div class="blog-flex">
+            <div class="blog-content-left">
+                <img src="./img/blog3.jpg" alt="" srcset="">
+            </div>
+            <div class="blog-content-right bg-#f4f4f4">
+                <h1>Blog Post 3</h1>
+                <i class="fas fa-user"> Posted By Denis Mariga| August 30 2020</i>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio repudiandae ullam voluptatum hic repellendus ipsa dolorum, omnis ea commodi in, ab corporis nihil, aperiam deserunt.</p>
+                <a href="blog.html" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <footer>
+            <div class="footer-content">
+                <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </div>
+            <p>Copyright &copy;2020 Denis Mariga</p>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <script>
+        // Smooth Scrolling
+        $('#navbar a, .btn').on('click', function(e) {
+            if (this.hash !== '') {
+                e.preventDefault();
+
+                const hash = this.hash;
+
+                $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 100,
+                    },
+                    800
+                );
+            }
+        });
+    </script>
+</body>
