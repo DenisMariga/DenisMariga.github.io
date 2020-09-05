@@ -1,0 +1,308 @@
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --primary-color: #c72727;
+        --secondary-color: #f99500;
+        --light-color: #f3f3f3;
+        --dark-color: #333;
+        --max-width: 1100px;
+        --tech-color: chartreuse;
+        --business-color: bisque;
+        --sports-color: #f95000;
+    }
+    
+    body {
+        line-height: 1.6rem;
+        font-family: Lato, Roboto;
+        background-color: var(--light-color);
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    a {
+        text-decoration-line: none;
+    }
+    
+    li {
+        list-style-type: none;
+    }
+    
+    .container {
+        max-width: var(--max-width);
+        margin: auto;
+        overflow: hidden;
+        padding: 0 2rem;
+    }
+    
+    .card {
+        background-color: #fff;
+        padding: 1rem;
+    }
+    
+    .bg-dark {
+        background-color: var(--dark-color);
+        color: #fff;
+    }
+    
+    .bg-primary {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+    
+    header {
+        background-color: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 12;
+    }
+    
+    header .container {
+        display: grid;
+        grid-template-columns: 6fr 3fr 2fr;
+        padding: 1rem;
+        align-items: center;
+    }
+    
+    header .container img {
+        width: 180px;
+    }
+    
+    header .container .links ul {
+        display: flex;
+    }
+    
+    header .container .social-icons a {
+        padding: .6rem;
+        color: var(--primary-color);
+    }
+    
+    header .container .links ul {
+        justify-self: end;
+        display: flex;
+    }
+    
+    header .container .links ul li a {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #000000;
+        padding: .7rem;
+    }
+    
+    header .container .links ul li a.active {
+        background: var(--primary-color);
+        color: #ffffff;
+    }
+    
+    header .container .links ul li a:hover {
+        background-color: var(--light-color);
+        color: var(--dark-color);
+    }
+    
+    #showcase {
+        background-color: var(--dark-color);
+        color: white;
+        padding: 2rem;
+        position: relative;
+    }
+    
+    #showcase::before {
+        content: '';
+        background: url(../img/showcase.jpg) no-repeat center center/cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .6;
+    }
+    
+    #showcase .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        line-height: 1.7;
+        height: 50vh;
+    }
+    
+    #showcase .container * {
+        z-index: 10;
+    }
+    
+    .btn {
+        display: inline-block;
+        padding: .5rem 1.5rem;
+        margin-top: 1rem;
+        color: #fff;
+        text-align: center;
+    }
+    
+    button {
+        border: none;
+    }
+    
+    .btn:hover {
+        opacity: .9;
+    }
+    
+    .btn-primary {
+        background-color: var(--primary-color);
+    }
+    
+    .btn-dark {
+        background-color: var(--dark-color);
+        padding: .8rem;
+    }
+    
+    .btn-secondary {
+        background-color: var(--secondary-color);
+    }
+    /* .btn-secondary {
+        background-color: var(--dark-color);
+    } */
+    
+    .category {
+        display: inline-block;
+        font-size: .6rem;
+        text-transform: uppercase;
+        padding: 0.4rem 0.6rem;
+        border-radius: 25%;
+    }
+    
+    .category-technology {
+        background-color: var(--tech-color);
+        color: #000000;
+    }
+    
+    .category-business {
+        background-color: var(--business-color);
+        color: #000000;
+    }
+    
+    .category-sports {
+        background-color: var(--sports-color);
+        color: #000000;
+    }
+    
+    #articles {
+        margin-bottom: 2rem;
+    }
+    
+    #articles h2 {
+        padding: 1rem 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    #articles .article-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+    
+    #articles .article-container article:first-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        align-items: center;
+        /* grid-column: 1 /span 2; shorthand*/
+    }
+    
+    #articles .article-container article:last-child {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-items: center;
+        /* grid-column: 1 /span 2; shorthand*/
+    }
+    
+    #articles .article-container article:nth-child(2) {
+        color: white;
+    }
+    
+    #articles .article-container article:nth-child(6) {
+        color: white;
+        background-color: var(--primary-color);
+    }
+    
+    .footer-content img {
+        width: 150px;
+    }
+    
+    footer .footer-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0;
+        grid-gap: 1rem;
+    }
+    
+    footer .footer-content input[type='email'] {
+        padding: .5rem;
+        width: 90%;
+    }
+    
+    footer .footer-content button {
+        width: 90%;
+    }
+    
+    footer .footer-content ul li {
+        color: #fff;
+        border-bottom: 1px dashed var(--light-color);
+        padding: .4rem;
+        width: 90%;
+    }
+    
+    footer .footer-content ul a li:hover {
+        color: var(--primary-color);
+    }
+    
+    footer .footer-content .btn {
+        width: 90%;
+    }
+    
+    footer .footer-content .btn-secondary {
+        padding: 1rem;
+    }
+    
+    .copyright {
+        background-color: #444;
+        grid-column: 1/span 4;
+        padding: .8rem;
+        text-align: center;
+    }
+    
+    #about-content {
+        background-color: #fff;
+    }
+    
+    #about .about-content {
+        display: grid;
+        grid-template-columns: 5fr 2fr;
+        margin: 2rem 0;
+        grid-gap: 1.5rem;
+    }
+    
+    #about .about-content article:first-child {
+        grid-row: 1/span 3;
+        grid-row-gap: 1rem;
+    }
+    
+    aside {
+        padding: 1.5rem;
+    }
+    
+    aside button {
+        width: 90%;
+    }

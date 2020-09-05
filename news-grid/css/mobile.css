@@ -1,0 +1,138 @@
+header .container .social-icons {
+    display: none;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    align-items: center;
+}
+
+header .container img {
+    justify-self: center;
+    width: 180px;
+}
+
+header .container .links {
+    display: grid;
+    justify-self: center;
+    margin-top: 1.5rem;
+}
+
+#showcase .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.7;
+    height: 50vh;
+}
+
+#articles .article-container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+}
+
+#articles .article-container article:first-child {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+    /* grid-column: 1 /span 2; shorthand*/
+}
+
+#articles .article-container {
+    grid-template-columns: auto;
+}
+
+
+/* #articles .article-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+} */
+
+
+/* #showcase .showcase-container,
+#articles .article-container,
+footer .footer-content {
+    grid-template-columns: 1fr;
+} */
+
+#articles .article-container article:last-child {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    align-items: center;
+    /* grid-column: 1 /span 2; shorthand*/
+}
+
+#about .about-content {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+    text-align: center;
+}
+
+#about .about-content article:first-child {
+    grid-row: 1/span 4;
+    grid-row-gap: 1rem;
+}
+
+
+/* footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+
+
+/* .email {
+    display: flex;
+    flex-direction: column;
+    margin-left: -295px;
+    align-items: flex-start;
+    justify-self: left;
+} */
+
+@media(max-width: 600px) {
+    /* Stack Grid Items */
+    footer .footer-content {
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+    }
+    footer .email {
+        padding: .5rem;
+        width: 100%;
+    }
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .footer-links ul {
+        width: 100%;
+    }
+    footer .footer-content .btn {
+        width: 30%;
+    }
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
