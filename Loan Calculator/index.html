@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="error">
+            <h2>Please enter an infinite number</h2>
+        </div> -->
+        <h1>Loan Calculator</h1>
+        <div class="inputs">
+            <form>
+                <div class="input">
+                    <span class="first">KSh</span>
+                    <input type="text" name="" id="loanAmount" placeholder="Loan Amount"></div>
+                <div class="input">
+                    <span class="first">%</span>
+                    <input type="text" name="" id="Interest" placeholder="Interest">
+                </div>
+                <div class="input"> <input type="text" name="" id="Years">
+                </div>
+                <button type="submit" class="btn">Calculate</button>
+            </form>
+        </div>
+        <div class="load"><img src="./Image/Spinner-1s-200px.gif" alt="" srcset=""></div>
+        <div class="results">
+            <h2>Results</h2>
+            <div class="input">
+                <span>Monthly payments</span>
+                <input type="text" name="" id="Monthly" disabled>
+            </div>
+            <div class="input">
+                <span>Total payments</span>
+                <input type="text" name="" id="total" disabled>
+            </div>
+            <div class="input">
+                <span>Total Interest</span>
+                <input type="text" name="" id="Tl-interest" disabled>
+            </div>
+        </div>
+    </div>
+    <footer>Created By Denis Mariga Copyright &copy;2020</footer>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
