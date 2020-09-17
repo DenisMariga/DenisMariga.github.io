@@ -1,0 +1,3 @@
+The major difference is that the script.js way is the simplest but it involves alot of repetition when it comes to the if statements.
+.the cleancode.js solves the repetition problem thus making the code  easy to update any time you wish
+hope you like the project

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #344a72;
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: 20px; */
+    line-height: 1rem;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.header {
+    border: 1px solid black;
+    max-width: 400px;
+    margin: auto;
+    background-color: white;
+    margin-top: 30px;
+    padding: 20px;
+    max-height: 100vh;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+header {
+    text-align: center;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: block;
+}
+
+label {
+    display: block;
+    font-size: 1.3rem;
+}
+
+input {
+    padding: 7px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: 0;
+}
+
+.form-group.success input {
+    border-color: #2ecc71;
+}
+
+.form-group.error input {
+    border-color: red;
+}
+
+small {
+    visibility: hidden;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.error small {
+    color: red;
+    visibility: visible;
+}
+
+button.btn {
+    width: 100%;
+    background: #49c1a2;
+    padding: 10px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: 0;
+}
+
+p.terms {
+    text-align: justify;
+    font-size: 12px;
+}
+
+p.terms a {
+    text-align: center;
+}
+
+span {
+    color: black;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+footer p a {
+    color: #49c1a2;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
